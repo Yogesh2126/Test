@@ -15,7 +15,7 @@ pipeline{
 		        }
          stage ('Test'){
 		          steps {
-			          sh 'abc.sh'
+			          sh './abc.sh'
 			        }
 		        }						
 	    }
