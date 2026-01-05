@@ -1,5 +1,6 @@
 #!/bin/bash
 
 echo "Hello world"
-pwd
-ls 
+echo "using GitHub Hook trigger"
+
+ 
