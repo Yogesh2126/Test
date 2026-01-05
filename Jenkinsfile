@@ -1,9 +1,10 @@
 pipeline{
     agent any
-	cleanWs()
+	
 	  stages {
 		 stage ('build'){
 		          steps {
+					  cleanWs()
 			          sh 'ls'
 					  sh 'pwd'
 			        }
