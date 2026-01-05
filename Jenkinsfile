@@ -2,7 +2,7 @@ pipeline{
     agent any
 	
 	  stages {
-		  cleanWs()
+	
 		 stage ('build'){
 		          steps {
 			          sh 'ls'
@@ -12,6 +12,7 @@ pipeline{
          stage ('Test'){
 		          steps {
 			          sh './abc.sh'
+					  cleanWs()
 			        }
 		        }						
 	    }
