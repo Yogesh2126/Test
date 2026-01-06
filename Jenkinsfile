@@ -1,5 +1,6 @@
 pipeline{
     agent any
+	
 	  stages {
 		 stage ('build'){
 		          steps {
@@ -10,6 +11,8 @@ pipeline{
          stage ('Test'){
 		          steps {
 			          sh './abc.sh'
+					  sh 'python3 test.py'
+					  
 			        }
 		        }						
 	    }
