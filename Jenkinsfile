@@ -7,7 +7,7 @@ pipeline{
 		 stage ('build'){
 		          steps {
 					  cleanWs()
-			          sh 'ls-la'
+			          sh 'ls -la'
 			        }
 		        }
          stage ('Test'){
