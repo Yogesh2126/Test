@@ -1,7 +1,9 @@
 pipeline{
     agent any
-	
-	  stages {
+	    triggers {
+           pollSCM 'H/2 * * * *'
+         }
+   stages {
 		 stage ('build'){
 		          steps {
 			          sh 'ls'
