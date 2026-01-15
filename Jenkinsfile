@@ -14,8 +14,7 @@ pipeline{
 		          steps {
 			          sh './abc.sh'
 					  sh 'python3 test.py'
-					  
-			        }
+				  }
 		        }						
 	    }
 }
